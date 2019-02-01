@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_size</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .size{
+      height: 35px;
+      width: 100px;
+      border:2px solid #000;
+      padding:10px;
+      margin:10px;
+    }
+  </style>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var wid = $(".size").width();
+      console.log(wid);
+
+      var hei = $(".size").height();
+      console.log(hei);
+
+      var inwid = $(".size").innerWidth();
+      console.log(inwid);
+
+      var inhei = $(".size").innerHeight();
+      console.log(inhei);
+
+
+      var outwid = $(".size").outerWidth(true);
+      console.log(outwid);
+
+      var outhei = $(".size").outerHeight(true);
+      console.log(outhei);
+    })
+  </script>
+</head>
+<body>
+  <div>
+    <div class="size"><p>hello Jquery</p></div>
+  </div>
+</body>
+
+</html>

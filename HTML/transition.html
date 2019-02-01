@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Transition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #wrapper{
+      width: 500px;
+      height: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    #chanCol{
+      color: black;
+      font-size: 25px;
+      margin-bottom: 5%;
+      transition: color 2s ease;
+      -webkit-transition:color 2s ease;
+      -moz-transition: color 2s ease;
+    }
+    #chanWid{
+      width: 0px;
+      height: 5px;
+      margin: 0 auto;
+      transition:width 2s ease;
+      -webkit-transition:width 2s ease;
+      -moz-transition:width 2s ease;
+      background-color: lightblue;
+    }
+    #chan{
+      margin-top: 10%;
+      border: 1px solid black;
+      outline: none;
+      background-color: white;
+      width:80px;
+      height: 25px;
+      border-radius: 5%;
+      box-shadow: 2px gray;
+    }
+    #chan:active{
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div id = "wrapper">
+    <p id ="chanCol">我是段落</p>
+    <div id = "chanWid"></div>
+    <button id ="chan" onclick="chan()">点击我</button>
+  </div>
+</body>
+<script>
+  var e1 = document.getElementById("chanCol");
+  var e2 = document.getElementById("chanWid");
+  function chan() {
+    if(e1.style.color == "black" && e2.style.width == "0px"){
+      e1.style.color = "lightblue";
+      e2.style.width = "100px"
+    }else{
+     e1.style.color = "black";
+     e2.style.width = "0px"
+    }
+  }
+</script>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Movie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .movieBox {
+      width: 200px;
+      height: 300px;
+      border: 1px solid #000000;
+    }
+
+    .movieBox>h2 {
+      color: deeppink;
+      margin-left: 30px;
+    }
+
+    ul>li {
+
+      list-style: none;
+      margin-top: 5px;
+      border-top: 1px dotted #00000f;
+      border-bottom: 1px dotted #00000f;
+
+    }
+
+    .movieBox>ul>li span {
+      margin-right: 15px;
+      display: inline-block;
+      text-align: center;
+      line-height: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: #cccccc;
+    }
+
+    ul>li:nth-child(-n+3) span {
+      background-color: deeppink;
+    }
+
+    .content {
+      display: none;
+      overflow: hidden;
+      margin: 5px;
+    }
+
+    .content>img {
+      width: 60px;
+      height: 80px;
+      float: left;
+    }
+
+    .content>p {
+      width: 120px;
+      height: 80px;
+      float: right;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .active .content {
+      display: block;
+    }
+  </style>
+  <script>
+    $(function () {
+      $("li").mouseenter(function () {
+        $(this).addClass("active");
+      })
+      $("li").mouseleave(function () {
+        $(this).removeClass("active");
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <div class="movieBox">
+    <h2>电影排行榜</h2>
+    <ul>
+      <li><span>1</span>龙猫
+        <div class="content">
+          <img src="E:\JS Code\image\正面.jpg" alt="哈哈">
+          <p>龙猫是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。</p>
+        </div>
+      </li>
+
+      <li><span>2</span>龙猫
+        <div class="content">
+          <img src="E:\JS Code\image\正面.jpg" alt="哈哈">
+          <p>龙猫是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。</p>
+        </div>
+
+      </li>
+
+      <li><span>3</span>龙猫
+        <div class="content">
+          <img src="E:\JS Code\image\正面.jpg" alt="哈哈">
+          <p>龙猫是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。</p>
+        </div>
+
+      </li>
+
+      <li><span>4</span>龙猫
+
+        <div class="content">
+          <img src="E:\JS Code\image\正面.jpg" alt="哈哈">
+          <p>龙猫是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。</p>
+        </div>
+      </li>
+      <li><span>5</span>龙猫
+
+        <div class="content">
+          <img src="E:\JS Code\image\正面.jpg" alt="哈哈">
+          <p>龙猫是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。</p>
+        </div>
+      </li>
+      <li><span>6</span>龙猫
+        <div class="content">
+          <img src="E:\JS Code\image\正面.jpg" alt="哈哈">
+          <p>龙猫是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。</p>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+
+
+  <script>
+
+  </script>
+
+
+</body>
+
+</html>

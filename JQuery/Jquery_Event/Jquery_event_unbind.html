@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_Event</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src=http://libs.baidu.com/jquery/2.0.0/jquery.min.js> </script>
+  <style>
+    .wrap {
+      width: 50 px;
+      height: 50 px;
+      background-color: pink;
+    }
+    </style>
+    <script >
+
+      $(function () {
+        function click1() {
+        $(".wrap").width("100px");
+        $(".wrap").height("100px");
+        $(".wrap").css("background-color", "red");
+        }
+
+        function click2() {
+        $(".wrap").text("hello,click!")
+        }
+
+        $("button").on("click",click1);
+
+        $("button").on("click",click2);
+
+        $("p").mouseenter(function () {
+          $("p").css("background-color", "red");
+        });
+
+        $("p").mouseenter(function () {
+          $("p").css("color", "red");
+        })
+
+        $("p").mouseleave(function () {
+          $("p").css("background-color", "white");
+
+          //演示不传参
+          // $("button").off();//全部解绑
+
+          //演示传一个参
+          //$("button").off("click");//解绑所有click事件
+
+          //演示传两个参
+          $("button").off("click",click2);//解绑所有click事件
+        })
+      })
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+
+  </div>
+  <button>点我啊</button>
+
+  <p>演示mouseenter和mouseleave</p>
+</body>
+
+</html>

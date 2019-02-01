@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_attr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://libs.baidu.com/jquery/1.2.3/jquery.min.js"></script>
+</head>
+<script>
+$(function(){
+//attr(name||key,value|fn)
+//如果是获取值：不论获取到多少，返回第一个获取到的
+//如果是设置：设置所有
+//1.name参数：表示属性名称（只传一个参数，表示获取值，只返回第一个获取到的）
+  //console.log($("div").attr("id"));//myJquery1
+  //properties（属性名键值对）
+  //$("div").attr({class:"my",name:"liuhuan"});
+  //key,value(设置属性值，所有的都设置)
+  //$("div").attr("class","hello");
+  //key,function(index,attr)
+  //key:属性名称
+  //function：回调函数
+  //index：当前属性索引值
+  //attr:原先属性值
+  // $("div").attr("class",function () {
+  //   return "hello_function";//设置class属性为"hello_function"
+  // });
+
+
+  //2.removeAttr()
+  //移除节点
+   //$("div").removeAttr("name");
+});
+
+
+</script>
+<body>
+  <div class="myJquery1" name="myDiv1" ></div>
+  <div class="myJquery2" name="myDiv2"></div>
+</body>
+</html>

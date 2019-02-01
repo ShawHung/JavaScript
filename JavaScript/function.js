@@ -48,7 +48,7 @@ call(-1,0);//调用
 function retn(a){
   console.log(a);
   return 0;//return语句后不执行
-  console.log("Did i return?");/不会被执行/
+  console.log("Did i return?");//不会被执行/
 }
 retn("I'm Groot!");//"I'm Groot!"
 
@@ -176,7 +176,7 @@ fun();//输出1.因为函数表达式声明时处于全局作用域，读取的�
 
 //函数内部声明的函数作用域就是所声明函数的内部
 function outerFunc(){
-  var mm = 1;
+ // var mm = 1;
   function innerFunc() {
     return mm;
   }
@@ -185,4 +185,5 @@ function outerFunc(){
 
 var mm = 2;
 var fm = outerFunc();
+
 console.log(fm());

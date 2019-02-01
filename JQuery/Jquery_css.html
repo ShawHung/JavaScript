@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_css</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://libs.baidu.com/jquery/1.2.3/jquery.min.js"></script>
+  <script>
+    $(function () {
+      //单独设置
+      $("div").css("width","100px");
+
+      //链式
+      $("div").css("height","100px").css("color","white");
+
+      //对象
+      $("div").css({
+        backgroundColor:"black",
+      })
+    })
+  </script>
+</head>
+<body>
+  <div>jquery——css</div>
+</body>
+
+</html>

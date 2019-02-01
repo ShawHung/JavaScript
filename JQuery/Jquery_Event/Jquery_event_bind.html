@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_Event</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src=http://libs.baidu.com/jquery/2.0.0/jquery.min.js> </script>
+  <style>
+    .wrap{
+      width: 50px;
+      height:50px;
+      background-color: pink;
+    }
+  </style>
+  <script>
+    $(function () {
+     $("button").click(function(){
+        $(".wrap").width("100px");
+        $(".wrap").height("100px");
+        $(".wrap").css("background-color","red");
+     });
+
+     $("button").on("click",function(){
+        $(".wrap").text("hello,click!")
+     })
+
+     $("p").mouseenter(function(){
+       $("p").css("background-color","red");
+     });
+
+    $("p").mouseenter(function(){
+       $("p").css("color","red");
+    })
+
+    $("p").mouseleave(function(){
+       $("p").css("background-color","white");
+    })
+    })
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+
+  </div>
+  <button>点我啊</button>
+
+  <p>演示mouseenter和mouseleave</p>
+</body>
+
+</html>

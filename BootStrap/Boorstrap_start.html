@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+      .row{
+          padding: 10px;
+          margin:5px;
+      }
+      [class*="col-"]{
+          background-color: gray;
+          padding: 2px;
+          margin-bottom: 1px;
+          border:1px solid #000000;
+      }
+    </style>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-1">演示十二列</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+
+
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-8">col-md-8</div>
+      </div>
+
+      <p>演示嵌套</p>
+      <div class="row">
+        <div class="col-sm-12">
+          col-sm-12
+          <div class="row">
+            <div class="col-xs-8">演示嵌套</div>
+            <div class="col-xs-4">演示嵌套</div>
+
+            <div class="col-xs-6">演示嵌套</div>
+            <div class="col-xs-6">演示嵌套</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--演示偏移-->
+      <p>演示偏移<p>
+      <div class="row">
+        <div class="col-md-4">我是参考</div>
+        <div class="col-md-3 col-md-offset-3">向右偏移四个栅格</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-3">向右偏移三个栅格并做为参考</div>
+        <div class="col-md-3 col-md-offset-3">相对前一个向右偏移三个栅格</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">向右偏移三个栅格</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">col-md-9现在在前面</div>
+        <div class="col-md-3">col-md-3现在在后面</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9 col-md-push-3">col-md-9现在在后面</div>
+        <div class="col-md-3 col-md-pull-9">col-md-3现在在前面</div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/holder/2.9.3/holder.min.js"></script>-->
+  </body>
+</html>

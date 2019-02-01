@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>伪元素实现Box-shadow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    .container{
+      position: relative;
+      height: 500px;
+      width: 500px;
+      margin: 200px auto;
+      background-color: #fff111;
+      border: 5px solid #cccccc;
+    }
+    .container::before{
+
+      display: block;
+      margin-bottom: 100px;
+      content: "1";
+      width: 500px;
+      height: 100px;
+      background-color: #cc000c;
+    }
+    .container::after{
+    bottom: 0;
+    display: block;
+    content: "2";
+    width: 500px;
+    height: 100px;
+    background-color: #cc000c;
+    position:absolute;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Hello world</h1>
+      <p></p>
+    </div>
+</body>
+</html>

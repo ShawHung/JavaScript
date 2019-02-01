@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_size</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://libs.baidu.com/jquery/1.2.3/jquery.min.js"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .parent{
+      width:100px;
+      height:100px;
+      border:50px solid #000;
+      position:relative;
+    }
+    .son{
+      position:relative;
+      left: 50px;
+      top:50px;
+      width:50px;
+      height:50px;
+      background-color: aqua;
+    }
+  </style>
+  <script>
+    $(function () {
+      // var off = $(".son").offset().left;
+      // $("p").text("偏移量："+off);
+
+      $(".son").offset(10)
+    })
+  </script>
+  </head>
+
+<body>
+  <div class="parent">
+    <div class="son">
+
+    </div>
+  </div>
+  <p></p>
+</body>
+
+</html>

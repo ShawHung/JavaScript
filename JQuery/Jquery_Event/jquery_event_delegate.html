@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_delegate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src=http://libs.baidu.com/jquery/2.0.0/jquery.min.js> </script>
+  <style>
+
+  </style>
+  <script>
+    $(function () {
+      $("button").click(function () {
+        $("ul").append("<li>新增li</li>");
+      })
+  //   原方法
+  //     $("ul>li").click(function(){
+  //       console.log($(this).text());
+  //     })
+  //   通过delegate委托
+  //     $(document).delegate("li","click",function(){
+  //       console.log($(this).text());
+  //     })
+
+  //     通过on绑定
+  //     $(document).on("click","li",function () {
+  //       console.log($(this).text());
+  //     })
+  })
+
+
+  </script>
+</head>
+
+<body>
+<ul>
+  <li>我是第1个li</li>
+  <li>我是第2个li</li>
+  <li>我是第3个li</li>
+</ul>
+<button>添加一个li</button>
+</body>
+
+</html>

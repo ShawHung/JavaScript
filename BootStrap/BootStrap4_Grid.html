@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BootStrap4-Grid</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style >
+      [class*="col"]{
+      background-color: gray;
+      border:1px solid #000000;
+      text-align: center;
+      }
+     div.row[class*="justify"]>div{
+       height: 35px;
+     }
+
+    .no-gutters { margin-right: 0px; margin-left: 0px; }
+    .col,[class*="col-"] { padding-right: 0; padding-left: 0; }
+      section{
+        border:1px dotted rgba(0,0,0,100);
+        padding: 1.5rem;
+        margin: 2rem;
+      }
+      hr{
+        background-color: darkgray;
+      }
+      div[class*="align"]{
+        padding: 1px;
+        border: 1px solid #112233;
+        height: 200px;
+      }
+      div[class*="justify"]{
+      padding: 1px;
+      border: 1px solid #112233;
+      height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <section>
+      <h4>设置列宽</h4>
+      <hr>
+      <div class="row">
+        <div class="col">
+          第一列
+        </div>
+        <div class="col-6">
+          第二列并且设置了列宽
+          偶数（剩下部分等分）
+        </div>
+        <div class="col">
+          第三列
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          第一列
+        </div>
+        <div class="col-5">
+          第二列并且设置了列宽
+          奇数同样适用
+        </div>
+        <div class="col">
+          第三列
+        </div>
+      </div>
+    </section>
+
+    <section>
+    <h4>使用<code>col-{breakpoint}-auto</code>使根据内容宽度调整列宽</h4>
+    <hr>
+      <div class="row justify-content-md-center">
+        <div class="col col-md-3">
+          我是一列固定宽度
+        </div>
+        <div class="col-md-auto">
+          我是自适应的
+        </div>
+        <div class="col col-md-3">
+          我是一列固定宽度
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col">
+          我是一列并且自适应
+        </div>
+        <div class="col-md-auto">
+          我是自适应的
+        </div>
+        <div class="col col-md-3">
+          我是一列并且固定宽度
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>等宽多行使用<code>.w-100</code>实现</h4>
+      <hr>
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="w-100"></div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+      </div>
+    </section>
+
+    <section >
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row align-items-start">
+        <div class="col">
+          我是上对齐
+        </div>
+        <div class="col">
+          我是上对齐
+        </div>
+        <div class="col">
+          我是上对齐
+        </div>
+      </div>
+    </section>
+
+    <section >
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row align-items-center">
+        <div class="col">
+          我是居中对齐
+        </div>
+        <div class="col">
+          我是居中对齐
+        </div>
+        <div class="col">
+          我是居中对齐
+        </div>
+      </div>
+    </section>
+
+    <section >
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row align-items-end">
+        <div class="col">
+          我是下对齐
+        </div>
+        <div class="col">
+          我是下对齐
+        </div>
+        <div class="col">
+          我是下对齐
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row justify-content-start">
+        <div class="col-3">
+          justify-content-start
+        </div>
+        <div class="col-3">
+          justify-content-start
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row justify-content-center">
+        <div class="col-3">
+          justify-content-center
+        </div>
+        <div class="col-3">
+          justify-content-center
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row justify-content-end">
+        <div class="col-3">
+          justify-content-end
+        </div>
+        <div class="col-3">
+          justify-content-end
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row justify-content-around">
+        <div class="col-3">
+          justify-content-around
+        </div>
+        <div class="col-3">
+          justify-content-around
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <h4>演示布局，参考<code>Flex</code>布局</h4>
+      <div class="row justify-content-between">
+        <div class="col-3">
+          justify-content-between
+        </div>
+        <div class="col-3">
+          justify-content-between
+        </div>
+        <div class="col-3">
+          justify-content-between
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>演示换行，当一个<code>div</code>中超过十二列会将无法平行排列的列换行到下一行</h4>
+      <div class="row ">
+        <div class="col-10">
+          col-10 所占栅格数为10
+        </div>
+        <div class="col-3">
+          col-3 所占栅格数为3，10+3>12,所以我会换行
+        </div>
+        <div class="col-6">
+          col-6  所占栅格数为3， 6+3 < 12,所以我不会换行
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>演示换行
+        <br>
+        <br>
+        一般通过添加多个<code>row</code>来换行，也可以通过<code>.w-100</code>类来处理<br>原理是通过插入一个<code>width:100%</code>的<code>Div</code></h4>
+      <div class="row ">
+        <div class="col col-sm-3">
+            col col-sm-3
+        </div>
+        <div class="col col-sm-3">
+            col col-sm-3
+        </div>
+        <div class="w-100"></div>
+        <div class="col col-sm-4">
+            col col-sm-4
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>演示重排序
+        <br>
+        <br>
+        使用 <code>.order-*</code> class选择符，可以对DIV空间进行 可视化排序,<br>系统提供了<code>.order-1</code>到<code>.order-12</code>12个级别的顺序，在五种浏览器和设备宽度上都能生效。
+        <br>
+        <br>
+属性<code>.order-first</code>快速更改一个顺序到最前面，同时其它元素也相应的获得了order:-1的属性，<br>这个属性也可以与。.order-*混合使用。<br><br>
+      </h4>
+      <div class="row ">
+        <div class="col ">
+          col  我没设置顺序，我的位置不变
+        </div>
+
+        <div class="col  order-12">
+          col  order-12 我在最后面
+        </div>
+        <div class="col order-1">
+          col  order-1 我在中间
+        </div>
+        <div class="col order-first">
+          col order-first 我设置了.order-first属性，我在最前面
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>演示偏移
+        <br>
+        <br>
+        使用响应式的<code>.offset-*</code>栅格偏移方法</h4>
+      <div class="row ">
+        <div class="col-3 offset-3">
+          col-3 我偏移了3个栅格
+        </div>
+        <div class="w-100"></div>
+        <div class="col-3  ">
+          col-3 为了显示偏移我设置了换行
+        </div>
+        <div class="col-4 ">
+          col-4
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h4></h4>
+      <div class="col-sm-9">
+        我是包含容器
+        <div class="row">
+        <div class="col-4 col-sm-4" style="margin-left: 20px;">
+          col-4 col-sm-4 我被包含
+         </div>
+        <div class="col-4 col-sm-4" >
+          col-4 col-sm-4 我被包含
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+  <h4>演示间隙沟槽清除，使用<code>.no gutters</code>类，使用无边缝设计不要把父容器设置成<code>.container</code>和<code>.container-fluid</code>中</h4>
+    <p>css样式
+      <code>
+      .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+
+        > .col,
+        > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+        }
+        }
+      </code>
+    </p>
+    <div class="row no-gutters">
+      <div class="col">
+        justify-content-between
+      </div>
+      <div class="col">
+        justify-content-between
+      </div>
+      <div class="col">
+        justify-content-between
+      </div>
+    </div>
+  </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

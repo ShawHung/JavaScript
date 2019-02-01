@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+
+<body>
+  <div id="app">
+    <input type="text" v-model="firstname">
+    <input type="text" v-model="lastname">
+    <input type="text" v-model="fullname">
+  </div>
+  <script>
+    var vm = new Vue({
+      el: '#app',
+      data: {
+        firstname:"xiao",
+        lastname:"huang",
+        fullname:"xiaohuang"
+      },
+      watch: {
+        firstname:function(val){
+          console.log("first监听属性")
+          this.fullname = val + "" + this.lastname
+        },
+        lastname:function(val){
+          console.log("last监听属性")
+          this.lastname = "huang"
+
+        }
+      },
+
+    })
+  </script>
+</body>
+
+</html>

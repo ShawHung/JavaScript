@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+
+</head>
+<body>
+
+  <div id = "el"><a href="#">1</a></div>
+  <a href="Ew">2</a>
+  <form action="" name="form1" id="form2" ></form>
+</body>
+  <script>
+console.log("document.defaultView:"+document.defaultView );
+console.log("document.doctype:"+document.doctype);
+console.log("document.documentElement:"+document.documentElement.nodeName);
+console.log("document.body:"+document.body.nodeName);
+console.log("document.head:"+document.head.nodeName);
+console.log("document.scollingElement:"+document.scrollingElement.nodeName);
+console.log("document.activeElement:"+document.activeElement.nodeName);
+
+var form = document.forms;
+console.log("表单长度："+form.length);
+console.log("表单元素："+form[0].nodeName);
+
+console.log("document.documentURI:"+document.documentURI);
+console.log("document.URL:"+document.URL);
+console.log("document.domain:"+document.domain)         ;
+
+console.log("document.lastModefied:"+document.lastModified);
+console.log("document.title:"+document.title);
+console.log("document.referrer:"+document.referrer);
+console.log("document.compatMode:"+document.compatMode);
+
+console.log("document.hidden:"+document.hidden);
+console.log("document.visibilityState:"+document.visibilityState);
+console.log("document.readyState:"+document.readyState);
+
+
+</script>
+</html>

@@ -26,3 +26,42 @@ console.log(0 in a) ;//false
 console.log(0 in b) ;//true
 
 
+var arr3 = [1,2,3,4];
+
+var arr4 = arr3.map(function (x,i) {
+  return x+i;
+});
+console.log(arr4);
+
+arr3.forEach(function (e,i) {
+  console.log("["+i+"] :"+e);
+});
+
+
+arr3.forEach(function (e) {
+  this.push(e*e);
+},arr3);
+console.log(arr3);
+
+var arr5 = [1,2,6,7,9,null];
+function compare(a) {
+    if(a%2 === 0){
+      return true;
+    }
+  }
+var carr = arr5.filter(compare);
+console.log(carr);
+
+//
+console.log(arr3.some( function isEven(params) {
+    return params%2 === 0;
+}));
+
+console.log(arr3.every(function isEven(params) {
+  return params % 2 === 0;
+}));
+
+var arr6 = arr3.reduce(function add(a,b){
+  return a+b;
+})
+console.log(arr6);

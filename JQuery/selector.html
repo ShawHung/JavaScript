@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery selector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://libs.baidu.com/jquery/1.2.3/jquery.min.js"></script>
+</head>
+<body>
+  <button>点击</button>
+  <p>本段落演示鼠标事件</p>
+  <input type="text">
+  <span></span>
+<script>
+  // $("button").click(function () {
+  //   alert("Hello Jquery!");
+  // });
+  $("p").mouseenter(function () {
+    $("p").css("color","red");
+  });
+  $("p").mouseleave(function () {
+    $("p").css("color","gray")
+  });
+  $("p").mousedown(function () {
+    $("p").text("mousedown!")
+  });
+  $("p").mouseup(function () {
+    alert("mouseup!");
+  });
+  $("input").keypress(function () {
+    var i = 1;
+    $("span").text(i+=1)
+  });
+  $("input").keydown(function () {
+      $("input").css("background","red");
+  })
+  $("input").keyup(function () {
+      $("input").css("background","white");
+  })
+  $("button").click(function () {
+    $("body").animate({backgroundcolor:'red'});
+  })
+
+</script>
+</body>
+
+</html>

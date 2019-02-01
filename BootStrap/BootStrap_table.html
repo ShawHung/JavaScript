@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap_Table</title>
+    <style>
+      section{
+        border: 1px dotted rgba(13,76,89,1);
+        padding: 10px;
+        margin-bottom:60px;
+      }
+    </style>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <label>基本表格：<code>.table</code>类</label>
+        <table class="table">
+
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+
+          <tr>
+            <td>Kobe</td>
+            <td>Bryant</td>
+          </tr>
+
+          <tr>
+            <td>James</td>
+            <td>Lebron</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <label>条纹状表格：<code>.table-striped</code>类</label>
+        <table class="table table-striped">
+
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+
+          <tr>
+            <td>Kobe</td>
+            <td>Bryant</td>
+          </tr>
+
+          <tr>
+            <td>James</td>
+            <td>Lebron</td>
+          </tr>
+        </table>
+      </section>
+
+
+      <section>
+        <label>带边框的表格：<code>.table-bordered</code>类</label>
+        <table class="table table-bordered">
+
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+
+          <tr>
+            <td>Kobe</td>
+            <td>Bryant</td>
+          </tr>
+
+          <tr>
+            <td>James</td>
+            <td>Lebron</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <label>鼠标悬停：<code>.table-hover</code>类</label>
+        <table class="table table-hover">
+
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+
+          <tr>
+            <td>Kobe</td>
+            <td>Bryant</td>
+          </tr>
+
+          <tr>
+            <td>James</td>
+            <td>Lebron</td>
+          </tr>
+        </table>
+      </section>
+
+    <section>
+      <label>紧缩表格：<code>.table-condensed</code>类 (<code>padding</code>减半)</label>
+      <table class="table table-condensed">
+
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+
+        <tr>
+          <td>Kobe</td>
+          <td>Bryant</td>
+        </tr>
+
+        <tr>
+          <td>James</td>
+          <td>Lebron</td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section>
+      <label>状态类</label>
+      <table class="table">
+
+        <tr>
+          <th>class</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+
+
+        <tr class="active">
+          <td><code>.active</code>表示鼠标悬停在行或单元格上的颜色</td>
+          <td>Kobe</td>
+          <td>Bryant</td>
+        </tr>
+
+        <tr class="success">
+          <td><code>.success</code>表示成功或积极的动作</td>
+          <td>Kobe</td>
+          <td>Bryant</td>
+        </tr>
+
+        <tr class="info">
+          <td><code>.info</code>表示普通提示信息或者动作</td>
+          <td>Kobe</td>
+          <td>Bryant</td>
+        </tr>
+
+        <tr class="warning">
+          <td><code>.warning</code>表示警告或者需要用户注意</td>
+          <td>James</td>
+          <td>Lebron</td>
+        </tr>
+
+        <tr class="danger">
+          <td><code>.danger</code>表示危险或者带来负面影响的动作</td>
+          <td>James</td>
+          <td>Lebron</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/holder/2.9.3/holder.min.js"></script>-->
+  </body>
+</html>

@@ -1,4 +1,4 @@
-### ECMAScript继承方式
+0### ECMAScript继承方式
 
 >借用构造函数
 ```

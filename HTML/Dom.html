@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div id="div">
+    sss,MKLJHGVCFHVB
+  </div>
+  <p>
+    <!--hello world-->
+  </p>
+</body>
+<script>
+  var node1 = document.getElementById("div");
+  console.log(node1.nodeType);
+  console.log(node1.firstChild.nodeValue);
+  console.log(node1.baseURI);
+  console.log(node1.nextSibling);
+  console.log(node1.parentNode);
+  console.log(node1.parentElement);
+  console.log(node1.previousSibling);
+  console.log(node1.previousElementSibling);
+  console.log(node1.ownerDocument);
+  //node1.textContent = "<p>hello</p>";
+  var p = document.createElement("p");
+  //node1.appendChild(p);
+  var u = document.createElement("ul");
+  node1.appendChild(u);
+  console.log(node1.hasChildNodes());
+
+  var clone = node1.cloneNode(true);
+  node1.appendChild(clone);
+
+
+  var insert = node1.firstChild;
+  node1.insertBefore(p, insert);
+
+  var replace = node1.replaceChild(p, clone);
+  console.log("返回值是：" + replace.nodeName);
+
+  console.log("结果：" + node1.contains(clone));
+
+  //node1.normalize();
+
+
+  //console.log("节点长度："+node1.childNodes.length);
+
+  var child = node1.childNodes;
+  node1.removeChild(child[1]);
+  console.log("changdu:" + child.length);
+
+  for (let i = 0; i < child.length; i++) {
+    var item = child[i];
+    console.log("节点是：" + item.nodeName);
+  }
+
+  console.log("item()方法演示：" + node1.childNodes.item(1).nodeName);
+
+
+  var chi = node1.children;
+  console.log("parentNode的children属性演示：" + chi.length);
+
+  console.log("firstElementNode演示：" + node1.firstElementChild.nodeName);
+  console.log("lastElementNode演示：" + node1.lastElementChild.nodeName);
+  console.log("childElementCount演示：" + node1.childElementCount);
+
+  node1.append("我是");
+    node1.prepend("是的");
+
+  p.remove();
+
+  var child1 = node1.firstChild;
+
+  child1.before(p,"hello");
+  child1.after(p);
+
+  console.log("替换前："+child1.nodeValue);
+  child1.replaceWith("01020102");
+  //console.log("替换后："+child1.nodeValue);
+
+
+</script>
+
+</html>

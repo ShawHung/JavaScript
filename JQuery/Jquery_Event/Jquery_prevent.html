@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jquery_prevent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://libs.baidu.com/jquery/1.2.3/jquery.min.js"></script>
+  <style>
+    .parent{
+      width:200px;
+      height:200px;
+      background-color: red;
+    }
+    .son{
+      width:100px;
+      height:100px;
+      background-color: blue;
+    }
+  </style>
+  <script>
+    $(function () {
+      $(".parent").click(function(){
+        alert("点击了parent");
+
+      })
+
+      $(".son").click(function(event){
+        alert("点击了son");
+        event.stopPropagation();
+        // return false;
+      })
+
+      //阻止默认行为
+      //return false 或者 event.preventDefault()
+      $("a").click(function (event) {
+        alert("点击了a标签")
+        // return false;
+        event.preventDefault();
+      })
+    })
+
+
+  </script>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="son"></div>\
+  </div>
+
+  <a href="https:\\www.baidu.com">百度一下</a>
+</body>
+
+</html>

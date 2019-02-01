@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>transform</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+      border: 2px solid lightslategray;
+      background-color: azure;
+      margin: 20px;
+      float: left;
+    }
+    #box1{
+      width: 100px;
+      height: 100px;
+    }
+    #box2{
+      width: 100px;
+      height:100px;
+      transform: skew(30deg);
+    }
+    #box3{
+      width: 100px;
+      height:100px;
+      transform: scaleX(0.5);
+    }
+    #box4{
+      width: 100px;
+      height:100px;
+      transform: rotate(45deg);
+    }
+    #box5{
+      width: 100px;
+      height:100px;
+      transform: translate(10px,20px);
+    }
+    #box6{
+      width: 100px;
+      height:100px;
+        transform:skew(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px)  ;
+    }
+  </style>
+</head>
+<body>
+    <div id="box1">盒子一</div>
+    <div id="box2">盒子二</div>
+    <div id="box3">盒子三</div>
+    <div id="box4">盒子四</div>
+    <div id="box5">盒子五</div>
+    <div id="box6">盒子六</div>
+</body>
+</html>
